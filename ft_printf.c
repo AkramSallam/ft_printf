@@ -11,6 +11,7 @@ static int	printType(va_list args, char type)
 	}
 	else if (type == 's')
 		return (ft_printStr(va_arg(args, char *)));
+	/*
 	else if (type == 'p')
 
 	else if (type == 'd')
@@ -22,7 +23,7 @@ static int	printType(va_list args, char type)
 	else if (type == 'x')
 
 	else if (type == 'X')
-		
+	*/	
 	return 1;
 }
 
