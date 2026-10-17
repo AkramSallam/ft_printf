@@ -11,9 +11,10 @@ static int	printType(va_list args, char type)
 	}
 	else if (type == 's')
 		return (ft_printStr(va_arg(args, char *)));
-	/*
-	else if (type == 'p')
+	//else if (type == 'p')
+		//return (ft_printPtr(va_arg(args, void *)));
 
+	/*
 	else if (type == 'd')
 
 	else if (type == 'i')
@@ -46,7 +47,8 @@ int	ft_printf(const char *s, ...)
 			else 
 				cntr += printType(args, *s);
 		}
-		write(1, &c, 1);
+		else
+			write(1, &c, 1);
 		s++;
 	}
 	va_end(args);
